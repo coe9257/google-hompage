@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Odin Project - Google Homepage</title>
     <style>
+      html,
+      body {
+        font-size: 14px;
+        font-family: arial, sans-serif;
+        color: #222;
+        min-width: 400px;
+      }
       body {
         padding: 0;
         margin: 0;
-        background-color: white;
+        background: #fff;
       }
       .googleImage {
         display: block;
@@ -21,9 +28,13 @@
         height: 4rem;
         align-items: center;
         margin: 0 1rem;
+        flex-shrink: 0;
+        box-sizing: border-box;
       }
       .groupOne {
         display: flex;
+        align-items: center;
+        height: 100%;
       }
       .groupTwo {
         display: flex;
@@ -34,34 +45,33 @@
       .signIn {
         margin: 0 1rem 0 1rem;
       }
+      .gDrive {
+      }
+      .navLinks {
+        font-size: 14px;
+        color: #222;
+        font-family: arial, sans-serif;
+      }
       .container1 {
-        height: 3rem;
-        width: 3rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        opacity: 1;
+        height: 40px;
+        width: 40px;
       }
       .gDrive {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 2px;
-        grid-row-gap: 2px;
-        height: 1.5rem;
-        width: 1.5rem;
-        justify-items: center;
-        align-items: center;
-        background-color: white;
-        padding: 0.75rem;
-        border-radius: 50%;
       }
-      .dots {
-        border-radius: 999px;
-        background-color: black;
-        width: 4px;
-        height: 4px;
-        margin: 0 1.5px 0 1.5px;
+      .gb_We {
+        height: 24px;
+        width: 24px;
+        color: #5f6368;
+        opacity: 1;
+      }
+      .gb_We {
+        fill: #5f6368;
       }
       .form {
         display: flex;
@@ -97,15 +107,11 @@
         <p class="navLinks">Images</p>
         <div class="container1">
           <div class="gDrive">
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
-            <div class="dots"></div>
+            <svg class="gb_We" id="color" focusable="false" viewBox="0 0 24 24">
+              <path
+                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+              ></path>
+            </svg>
           </div>
         </div>
         <button class="signIn">Sign in</button>
