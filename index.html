@@ -68,11 +68,25 @@
         justify-content: center;
         align-items: center;
       }
+
+      .container2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
       .text {
-        margin-right: 1rem;
-        background-color: #f8f8f8;
-        padding: 0.75rem;
-        border-radius: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 27.5rem;
+      }
+      .buttonText {
+        padding: 1rem 2rem;
+        width: auto;
+        border-radius: 2.5%;
+        color: rgb(0, 0, 0);
+        background-color: rgb(247, 245, 245);
       }
     </style>
   </head>
@@ -108,10 +122,16 @@
 
     <form class="search">
       <div class="form">
-        <label class="text" for="search">Search</label>
         <input type="text" name="search" id="search" />
       </div>
     </form>
+
+    <div class="container2">
+      <label class="text" for="search">
+        <p class="buttonText">Google Search</p>
+        <p class="buttonText">I'm feeling lucky</p>
+      </label>
+    </div>
 
     <p class="holidays"></p>
   </body>
