@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Odin Project - Google Homepage</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+      }
+      .googleImage {
+        display: block;
+        margin: 0 auto 0 auto;
+      }
+      .nav1 {
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        align-items: center;
+        margin: 0 1rem;
+      }
+      .groupOne {
+        display: flex;
+      }
+      .groupTwo {
+        display: flex;
+        align-items: center;
+      }
+      .navLinks,
+      .gDrive,
+      .signIn {
+        margin: 0 1rem 0 1rem;
+      }
+      .container1 {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .gDrive {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        height: 1.5rem;
+        width: 1.5rem;
+        justify-items: center;
+        align-items: center;
+        background-color: white;
+        padding: 0.75rem;
+        border-radius: 50%;
+      }
+      .dots {
+        border-radius: 999px;
+        background-color: black;
+        width: 4px;
+        height: 4px;
+        margin: 0 1.5px 0 1.5px;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text {
+        margin-right: 1rem;
+        background-color: #f8f8f8;
+        padding: 0.75rem;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav1">
+      <div class="groupOne">
+        <p class="navLinks">About</p>
+        <p class="navLinks">Store</p>
+      </div>
+      <div class="groupTwo">
+        <p class="navLinks">Gmail</p>
+        <p class="navLinks">Images</p>
+        <div class="container1">
+          <div class="gDrive">
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+            <div class="dots"></div>
+          </div>
+        </div>
+        <button class="signIn">Sign in</button>
+      </div>
+    </nav>
+    <img
+      class="googleImage"
+      src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif"
+    />
+
+    <form class="search">
+      <div class="form">
+        <label class="text" for="search">Search</label>
+        <input type="text" name="search" id="search" />
+      </div>
+    </form>
+
+    <p class="holidays"></p>
+  </body>
+</html>
