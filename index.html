@@ -66,27 +66,23 @@
       .form {
         display: flex;
         justify-content: center;
-        align-items: center;
       }
-
-      .container2 {
-        width: 100%;
+      .formGroup {
+        position: relative;
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin-top: 1rem;
+        height: 2rem;
       }
-
-      .text {
-        display: flex;
-        justify-content: space-between;
-        width: 27.5rem;
-      }
-      .buttonText {
-        padding: 1rem 2rem;
-        width: auto;
-        border-radius: 2.5%;
-        color: rgb(0, 0, 0);
-        background-color: rgb(247, 245, 245);
+      .searchIcon {
+        position: absolute;
+        width: 1.75rem;
+        height: 1.75rem;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        border-right: 1px solid grey;
       }
     </style>
   </head>
@@ -120,18 +116,29 @@
       src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif"
     />
 
-    <form class="search">
-      <div class="form">
-        <input type="text" name="search" id="search" />
+    <form class="form">
+      <div class="formGroup">
+        <svg
+          class="searchIcon"
+          focusable="false"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0
+               3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          ></path>
+        </svg>
+        <input class="searchBar" type="text" name="search" id="search" />
       </div>
     </form>
 
-    <div class="container2">
+    <!-- <div class="container2">
       <label class="text" for="search">
         <p class="buttonText">Google Search</p>
         <p class="buttonText">I'm feeling lucky</p>
       </label>
-    </div>
+    </div> -->
 
     <p class="holidays"></p>
   </body>
