@@ -84,16 +84,7 @@
         justify-content: center;
         height: 2rem;
       }
-      .searchIcon {
-        position: absolute;
-        width: 1.75rem;
-        height: 1.75rem;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-        border-right: 1px solid grey;
-      }
+
       .signIn {
         background-color: blue;
         border: 1px solid transparent;
@@ -112,6 +103,42 @@
         object-fit: contain;
         object-position: center bottom;
         width: auto;
+      }
+      .formGroup {
+        position: relative;
+      }
+      .formGroup {
+        height: 40px;
+        width: auto;
+        max-width: 584px;
+        margin: 24px auto 0 auto;
+        padding-top: 6px;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+      }
+      .searchBar {
+        border: none;
+      }
+      .searchIcon {
+        position: absolute;
+        left: 0;
+      }
+      .searchIcon {
+        position: absolute;
+        width: 1.75rem;
+        height: 1.75rem;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+      }
+      .searchIcon {
+        display: block;
+        height: 24px;
+        color: #9aa0a6;
+        fill: currentColor;
+        line-height: 24px;
+        padding-left: 12px;
       }
     </style>
   </head>
@@ -141,8 +168,8 @@
       src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
     />
 
-    <form class="form">
-      <div class="formGroup">
+    <div class="formGroup">
+      <form class="searchBar">
         <svg
           class="searchIcon"
           focusable="false"
@@ -151,19 +178,12 @@
         >
           <path
             d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0
-               3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+     3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
           ></path>
         </svg>
         <input class="searchBar" type="text" name="search" id="search" />
-      </div>
-    </form>
-
-    <!-- <div class="container2">
-      <label class="text" for="search">
-        <p class="buttonText">Google Search</p>
-        <p class="buttonText">I'm feeling lucky</p>
-      </label>
-    </div> -->
+      </form>
+    </div>
 
     <p class="holidays"></p>
   </body>
