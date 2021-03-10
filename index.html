@@ -15,6 +15,8 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        display: flex;
+        flex-direction: column;
       }
       body {
         padding: 0;
@@ -179,6 +181,43 @@
         font-family: arial, sans-serif;
         cursor: pointer;
       }
+      .footer-push {
+        display: flex;
+        flex-grow: 1;
+      }
+      footer {
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: green;
+        background-color: #f2f2f2;
+      }
+      .footer-group-1,
+      .footer-group-2,
+      .footer-group-3 {
+        display: flex;
+        justify-content: center;
+        color: #70757a;
+        min-width: 30%;
+      }
+      .footer-group-3 {
+        justify-content: flex-end;
+      }
+      @media (max-width: 838px) {
+        footer {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .footer-group-1 div,
+      .footer-group-2 div,
+      .footer-group-3 div {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+      }
     </style>
   </head>
   <body>
@@ -234,5 +273,32 @@
       <button>Google Search</button>
       <button>I'm Feeling Lucky</button>
     </div>
+
+    <div class="footer-push"></div>
+
+    <footer>
+      <div class="footer-group-1">
+        <div>Advertising</div>
+        <div>Business</div>
+        <div>How Search Works</div>
+      </div>
+      <div class="footer-group-2">
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKC
+            zFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad//
+            /hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQO
+            sDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtN
+            O5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
+          />
+        </div>
+        <div>Carbon Neutral since 2007</div>
+      </div>
+      <div class="footer-group-3">
+        <div>Privacy</div>
+        <div>Terms</div>
+        <div>Settings</div>
+      </div>
+    </footer>
   </body>
 </html>
