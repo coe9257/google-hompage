@@ -160,6 +160,25 @@
         line-height: 24px;
         padding-left: 12px;
       }
+      .search-buttons-container {
+        height: 70px;
+        padding-top: 18px;
+        display: flex;
+        justify-content: center;
+      }
+      .search-buttons-container button {
+        margin: 0 16px;
+        display: block;
+        box-sizing: border-box;
+        border: none;
+        width: 130px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        color: #3c4043;
+        font-family: arial, sans-serif;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -211,6 +230,9 @@
       </div>
     </div>
 
-    <p class="holidays"></p>
+    <div class="search-buttons-container">
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
   </body>
 </html>
